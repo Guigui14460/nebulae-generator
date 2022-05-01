@@ -1,0 +1,3 @@
+[submodule "data"]
+	path = data
+	url = https://github.com/Guigui14460/nebulae-generator-data.git
