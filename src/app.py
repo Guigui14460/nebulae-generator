@@ -17,11 +17,11 @@ def generate():
 
 st.header("Nebulae generator")
 st.write("""
-With the single page application, you can create a brand new nebula image (size 128x128 pixels).
+With this single page application, you can create a brand new nebula image (size 128x128 pixels).
 
 The model has been trained with the **TensorFlow** library.
 
-Created by [Guillaume Letellier](https://guillaumeletellier-portfolio.netlify.app/).
+Created by [Guillaume Letellier](https://guillaumeletellier-portfolio.netlify.app/)
 """)
 if st.button("Generate new nebula"):
     image = generate()
