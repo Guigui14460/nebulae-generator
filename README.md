@@ -20,8 +20,8 @@ You need to have Python 3 installed in your machine and you can run the followin
 ```bash
 $ pipenv install
 $ pipenv shell
-$ pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio===0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html # for pytorch
-$ pip3 install tensorflow==2.8.0 # tensorflow
+# you can install pytorch package to train/test pytorch model
+$ pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio===0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
 ```
 
 ## Commands

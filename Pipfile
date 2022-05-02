@@ -9,6 +9,7 @@ numpy = "*"
 matplotlib = "*"
 scipy = "*"
 streamlit = "*"
+tensorflow = "*"
 
 [dev-packages]
 
