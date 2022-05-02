@@ -2,6 +2,8 @@
 
 Project consisting in creating a generative model able to generate images of nebulae (planetary, dark, diffuse, protoplanetary or as supernova remnant).
 
+You can access the the streamlit app at [this URL](https://share.streamlit.io/guigui14460/nebulae-generator/main/src/app.py).
+
 ## Table of contents
 
   - [Table of contents](#table-of-contents)
