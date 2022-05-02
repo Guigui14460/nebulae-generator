@@ -3,7 +3,7 @@ from tensorflow.python import keras
 from tensorflow.python.keras import layers
 
 from constants import *
-from src.tensorflow.gan import GAN, GANMonitor
+from .gan import GAN, GANMonitor
 
 
 # data preprocessing

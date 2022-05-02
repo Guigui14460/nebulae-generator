@@ -8,6 +8,7 @@ pandas = "*"
 numpy = "*"
 matplotlib = "*"
 scipy = "*"
+streamlit = "*"
 
 [dev-packages]
 
