@@ -22,29 +22,17 @@ You need to have Python 3 installed in your machine and you can run the followin
 ```bash
 $ pipenv install
 $ pipenv shell
-# you can install pytorch package to train/test pytorch model
-$ pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio===0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
 ```
 
 ## Commands
-You can choose which library to use between TensorFlow and PyTorch :
-- TensorFlow
-  - for training :
+You can launch script :
+- for training :
 ```sh
-$ python3 src/tensorflow/train.py
+$ python3 src/train.py
 ```
-  - for testing :
+- for testing :
 ```sh
-$ python3 src/tensorflow/test.py
-```
-- PyTorch
-  - for training :
-```sh
-$ python3 src/pytorch/train.py
-```
-  - for testing :
-```sh
-$ python3 src/pytorch/test.py
+$ python3 src/test.py
 ```
 
 

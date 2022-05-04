@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 from tensorflow.python import keras
 
-from tensorflow_model.constants import *
+from constants import *
 
 
 # load trained generator
@@ -16,8 +16,8 @@ def generate():
 
 
 st.header("Nebulae generator")
-st.write("""
-With this single page application, you can create a brand new nebula image (size 128x128 pixels).
+st.write(f"""
+With this single page application, you can create a brand new nebula image (size {IMAGE_SIZE}x{IMAGE_SIZE} pixels).
 
 The model has been trained with the **TensorFlow** library.
 
