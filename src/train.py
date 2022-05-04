@@ -1,9 +1,11 @@
+import os
+
 import tensorflow as tf
 from tensorflow.python import keras
 from tensorflow.python.keras import layers
 
 from constants import *
-from .gan import GAN, GANMonitor
+from gan import GAN, GANMonitor
 
 
 # data preprocessing
@@ -34,13 +36,13 @@ discriminator = keras.Sequential(
 generator = keras.Sequential(
     [
         layers.InputLayer(input_shape=(LATENT_DIM,)),
-        layers.Dense(16 * 16 * 128),
-        layers.Reshape((16, 16, 128)),
-        layers.Conv2DTranspose(128, kernel_size=4, strides=2, padding="same"),
+        layers.Dense(16 * 16 * IMAGE_SIZE),
+        layers.Reshape((16, 16, IMAGE_SIZE)),
+        layers.Conv2DTranspose(IMAGE_SIZE, kernel_size=4, strides=2, padding="same"),
         layers.LeakyReLU(alpha=0.2),
-        layers.Conv2DTranspose(256, kernel_size=4, strides=2, padding="same"),
+        layers.Conv2DTranspose(2 * IMAGE_SIZE, kernel_size=4, strides=2, padding="same"),
         layers.LeakyReLU(alpha=0.2),
-        layers.Conv2DTranspose(512, kernel_size=4, strides=2, padding="same"),
+        layers.Conv2DTranspose(4 * IMAGE_SIZE, kernel_size=4, strides=2, padding="same"),
         layers.LeakyReLU(alpha=0.2),
         layers.Conv2D(3, kernel_size=5, padding="same", activation="sigmoid"),
     ],

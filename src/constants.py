@@ -3,12 +3,12 @@ import os
 
 # all directories and files things
 ROOT_DIR = "."
-OUTPUT_DIR = os.path.join(ROOT_DIR, "out")
 TRAINING_DATA_DIR = os.path.join(ROOT_DIR, "data")
-GENERATED_IMAGES_DIR = os.path.join(OUTPUT_DIR, "generated", "tensorflow")
+OUTPUT_DIR = os.path.join(ROOT_DIR, "out")
+GENERATED_IMAGES_DIR = os.path.join(OUTPUT_DIR, "generated")
 GENERATED_IMAGES_TRAINING_DIR = os.path.join(GENERATED_IMAGES_DIR, "training")
 GENERATED_IMAGES_TESTING_DIR = os.path.join(GENERATED_IMAGES_DIR, "testing")
-MODEL_DIR = os.path.join(OUTPUT_DIR, "models", "tensorflow")
+MODEL_DIR = os.path.join(OUTPUT_DIR, "models")
 MODEL_PATH = os.path.join(MODEL_DIR, "model.h5")
 os.makedirs(GENERATED_IMAGES_TRAINING_DIR, exist_ok=True)
 os.makedirs(GENERATED_IMAGES_TESTING_DIR, exist_ok=True)
